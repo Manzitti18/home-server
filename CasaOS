@@ -1,0 +1,8 @@
+# 📦 CasaOS Setup
+
+This folder includes how I installed and recovered CasaOS on my home server.
+
+## Installed with:
+
+```bash
+bash -c "$(curl -fsSL https://get.casaos.io)"
