@@ -1,0 +1,18 @@
+# 🔐 SSH Setup
+
+This folder contains notes and configuration examples for setting up SSH key-based access from a Windows PC to my Linux Mint home server.
+
+## Summary
+
+- SSH key pair generated on Windows
+- Public key added to `~/.ssh/authorized_keys` on Linux and Windows
+- Password login and root login disabled in `sshd_config`
+- Windows `.ssh/config` used to simplify login
+
+## Example SSH Config
+
+```bash
+Host homeserver
+    HostName 192.168.x.xxx
+    User <linux-user>
+    IdentityFile C:/Users/<windows-user>/.ssh/LinuxHomeServerKey
